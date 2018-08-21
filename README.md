@@ -92,3 +92,14 @@ public static void main(String args[]){
 
 ## *git docker
 ## *dont pad
+
+## java c exercicio1 -> compila
+## java exercicio1 -> executa
+
+## arquivo novo.txt depois salvar arquivo como .gitignore
+## escrever dentro
+## *.class
+## ignora arquivos .class
+## -> .gitignore faz parte do projeto, o que está escrito nele é que não faz parte
+## bolinha/*			-> ignora todos os arquivos
+## !bolinha/unico.txt 	-> exceto...
