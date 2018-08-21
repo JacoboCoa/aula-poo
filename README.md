@@ -48,3 +48,47 @@ public static void main(String args[]){
 	i++;	
 }
 ```
+
+```bash 
+### Anotações da aula 21/08/2018
+```
+
+```bash 
+### Comandos:
+```
+
+ctrl+l -> limpa o shell
+cd c: + enter -> entra no arquivo
+pwd -> Mostra o caminho
+git clone "endereço do repositório" -> 
+shift + Ins -> colar
+ls -> mostra o que tem dentro
+la -> lista arquivos ocultos
+.md -> arquivo markdown
+add "nome_do_arquivo" -> adiciona para o stage
+git commit ~m "Mensagem"
+ctrl + c -> aborta o comando
+git config --global user.name "Jacobo Daniel"
+git config --global user.email "jacobo.daniel.coa@gmail.com"
+ctrl + r -> procura o comando
+git config --global user.name
+git config --global user.email
+
+```bash
+### gol de mão -> Computador da Univali
+```
+
+git log
+export PAGER=
+git log
+git commit -m "Novos passos"
+git push -> empurra as sacolas para o remoto
+
+|Working Dir| -> git add |STAGE| -> git commit |Local Repository(Sacola)| -> git push -> |Repositório Remoto|
+
+```bahs
+## Sugestões
+```
+
+*git docker
+*dont pad
