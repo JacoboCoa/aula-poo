@@ -1,8 +1,10 @@
 # Jacobo Daniel
+
 ## Objetivo
 Repositório para manter os arquivos da disciplina de poo
 
 ## Comandos importantes para lembrar
+
 ### Clonar repositório
 git clone {endereço}
 
@@ -19,3 +21,10 @@ git log
 
 ### Para ver a situação do working dir
 git status
+
+### Para enviar as alterações para o repositório remoto
+git push
+
+## Importante quando estiver na Univali
+export PAGER=
+
