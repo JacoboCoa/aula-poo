@@ -1,3 +1,20 @@
+Anotações Aula 28/08/2018
+
+Usando a máquina da univali
+
+*Primeiro -> fazer download do Git Portable
+*Segundo  -> Extrair
+*Terceiro -> Fazer Login no site do Git Hub
+*Quarto   -> Se for a Primeira vez na Maquina especifica, usar "git clone http://...(Copiar do Site Git Hub)"
+*Quinto   -> Se já tiver usado a máquina antes, usar "git pull" para atualizar o diretório
+
+-> Git Bash
+*cd -> (escolher diretório a ser utilizado, ou seja, para acessar o repositório)
+*cd .. -> (volta uma hierarquia do diretório)
+*ls -la -> (mostra tudo que há dentro)
+
+-> Programando com o NetBeans
+*System.out.println
 ->Classe abstrata
 uma superclasse que não pode ser instanciada
 só pai
