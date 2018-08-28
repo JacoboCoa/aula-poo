@@ -18,8 +18,8 @@ public class Prova {
     private String data;
 
     //Métodos
-    public Prova(String nomeDaProva) {        //ñ tem string, ñ tem retorno
-        this.nome = nomeDaProva;
+    public Prova(String nome) {        //ñ tem string, ñ tem retorno
+        this.nome = nome;
         this.peso = 10;
     }
 

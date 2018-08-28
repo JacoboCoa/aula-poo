@@ -5,6 +5,8 @@
  */
 package pkg01.geradorprova;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Suzana
@@ -30,22 +32,20 @@ public class GeradorProva {
         System.out.println(x.obtemDetalhes());
         
         Discursiva d = new Discursiva();
-        d.setPergunta("Qual seu nome");
+        d.setPergunta("Qual seu nome?");
         d.setPeso(0);
         d.setCriteriosCorrecao("Saber o próprio nome");
         
         Objetiva o = new Objetiva();
-        o.setPergunta("Qual o melhor time do Brasil");
+        o.setPergunta("Qual o melhor time do Brasil?");
         o.setPeso(2);
         String[] opcoes = new String[5];
         opcoes[0] = "Gremio";
         opcoes[1] = "Inter";
         opcoes[2] = "Flamengo";
         opcoes[3] = "Corinthians";
-        opcoes[3] = "Sao Paulo";
+        opcoes[4] = "Sao Paulo";
         o.setOpcoes(opcoes);
         o.setRespostaCorreta(3);
-}
     }
-    
 }
