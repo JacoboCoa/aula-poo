@@ -1,0 +1,31 @@
+->Classe abstrata
+uma superclasse que não pode ser instanciada
+só pai
+
+->Classe final
+é uma classe estéril, não pode ter filho
+só filho
+
+public final double c= 12345...			// public (pode ser acessado de qualquer lugar)
+						//final (uma constante)
+						//double (tipo)
+						//c=12345... (dado da constante)
+
+class Aluno
+	public String Nome
+	public Char[] CPF
+	public static int Num_Alunos;
+
+b. 			//não estão declarados como static
+String. 		//estão declarados como static
+
+ctrl + shift setpraAbaixo		//No NetBeans
+
+Construtores ñ tem retorno
+
+*is significa get em métodos booleanos
+
+->Encapsulamento
+ctrl + alt + shift + e 		-> (atalho no netBeans para fazer "get" e "set"
+
+alt + shift + f 		-> (identa tudo)
