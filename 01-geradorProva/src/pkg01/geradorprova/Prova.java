@@ -20,7 +20,7 @@ public class Prova {
     //Métodos
     public Prova(String nome) {        //ñ tem string, ñ tem retorno
         this.nome = nome;
-        this.peso = 10;
+        this.peso = peso;
     }
 
     public String obtemDetalhes() {

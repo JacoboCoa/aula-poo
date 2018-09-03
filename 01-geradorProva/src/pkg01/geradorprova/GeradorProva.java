@@ -17,11 +17,33 @@ public class GeradorProva {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Prova x = new Prova("POO");
+        //Leituda de Dados
+        String nome_da_disciplina = "";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Qual a Disciplina da Prova?");
+        nome_da_disciplina = sc.nextLine();
+        
+        String local_da_prova = "";
+        System.out.println("\nQual o Local da Prova?");
+        local_da_prova = sc.nextLine();
+        
+        String data_da_prova = "";
+        System.out.println("\nQual a Data da Prova?");
+        data_da_prova = sc.nextLine();
+        
+        int peso_da_prova;
+        System.out.println("\nQual o Peso da Prova?");
+        peso_da_prova = sc.nextLine();
+        //CONTINUAR AQUI E TESTAR EM CIMA, E NA CLASSE PROVA.JAVA O PESO.
+        
+        Prova x = new Prova(nome_da_disciplina);
         //x.nome = "POO";
-        x.setLocal("Lab 3 - Bloco B6");
-        x.setData ("2018-08-28");
+        //x.setLocal("Lab 3 - Bloco B6");
+        x.setLocal(local_da_prova);
+        //x.setData ("2018-08-28");
+        x.setData(data_da_prova);
         //x.peso = 4;
+        //x.setPeso(peso_da_prova);
         //x.obtemDetalhes();    //Aqui ñ se faz nada com a string...
         
         //Forma Didática
@@ -30,6 +52,8 @@ public class GeradorProva {
         
         //Forma Resumida
         System.out.println(x.obtemDetalhes());
+        
+        
         
         Discursiva d = new Discursiva();
         d.setPergunta("Qual seu nome?");
