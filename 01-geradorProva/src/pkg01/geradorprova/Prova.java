@@ -5,6 +5,8 @@
  */
 package pkg01.geradorprova;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author 4813650
@@ -16,8 +18,9 @@ public class Prova {
     private int peso;
     private String local;
     private String data;
-    private Discursiva[] questoesDiscursivas;
-    private Objetiva[] questoesObjetivas;
+    private ArrayList<Questao> questoes;        //IMPLEMENTAR AQUI P/ a questa 7
+    //private Discursiva[] questoesDiscursivas;
+    //private Objetiva[] questoesObjetivas;
 
     //Métodos
     public Prova(String nome) {        //ñ tem string, ñ tem retorno
