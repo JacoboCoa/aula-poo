@@ -25,7 +25,14 @@ final class Discursiva extends Questao {
     public void setCriteriosCorrecao(String criteriosCorrecao) {
         this.criteriosCorrecao = criteriosCorrecao;
     }
-    public void Imprimir_resposta(){
+    /*public void Imprimir_resposta(){
         System.out.println("\nResposta: \n\n\n");
+    }*/
+        @Override
+    public String imprimir_questao(){
+        //System.out.println("\nResposta: \n\n\n");
+        String retorno = "";
+        retorno += "\nResposta: \n\n\n";
+        return retorno;
     }
 }

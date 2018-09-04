@@ -16,6 +16,8 @@ public class Prova {
     private int peso;
     private String local;
     private String data;
+    private Discursiva[] questoesDiscursivas;
+    private Objetiva[] questoesObjetivas;
 
     //Métodos
     public Prova(String nome) {        //ñ tem string, ñ tem retorno
@@ -92,6 +94,34 @@ public class Prova {
      */
     public void setData(String data) {
         this.data = data;
+    }
+
+    /**
+     * @return the questoesDiscursivas
+     */
+    public Discursiva[] getQuestoesDiscursivas() {
+        return questoesDiscursivas;
+    }
+
+    /**
+     * @param questoesDiscursivas the questoesDiscursivas to set
+     */
+    public void setQuestoesDiscursivas(Discursiva[] questoesDiscursivas) {
+        this.questoesDiscursivas = questoesDiscursivas;
+    }
+
+    /**
+     * @return the questoesObjetivas
+     */
+    public Objetiva[] getQuestoesObjetivas() {
+        return questoesObjetivas;
+    }
+
+    /**
+     * @param questoesObjetivas the questoesObjetivas to set
+     */
+    public void setQuestoesObjetivas(Objetiva[] questoesObjetivas) {
+        this.questoesObjetivas = questoesObjetivas;
     }
 
 }

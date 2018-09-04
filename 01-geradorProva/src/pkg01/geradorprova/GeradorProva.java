@@ -6,6 +6,7 @@
 package pkg01.geradorprova;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -102,14 +103,20 @@ public class GeradorProva {
         //Impressão
         System.out.println("\nIMPRESSAO DA PROVA\n\n");
         System.out.println(x.obtemDetalhes());
-        
+        x.setQuestoesDiscursivas(questoes_discursivas);
+        x.setQuestoesObjetivas(questoes_objetivas);
         for (int i=0;i<qtd;i++){
-            questoes_discursivas[i].Imprimir_pergunta();
-            questoes_discursivas[i].Imprimir_resposta();
+            //questoes_discursivas[i].Imprimir_pergunta();
+            //questoes_discursivas[i].imprimir_questao();
+            //JOptionPane.showInputDialog(questoes_discursivas[i].Imprimir_pergunta());
+            //JOptionPane.showInputDialog(questoes_discursivas[i].imprimir_questao());
+            //CONTINUAR AQUI
         }
         for (int i=0;i<qtd_obj;i++){
-            questoes_objetivas[i].Imprimir_pergunta();
-            questoes_objetivas[i].Imprimir_opcoes();
+            //questoes_objetivas[i].Imprimir_pergunta();
+            //questoes_objetivas[i].imprimir_questao();
+            //JOptionPane.showInputDialog(questoes_objetivas[i].Imprimir_pergunta());
+            //JOptionPane.showInputDialog(questoes_objetivas[i].imprimir_questao());
         }
     }
 }

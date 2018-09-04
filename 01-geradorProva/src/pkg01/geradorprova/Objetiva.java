@@ -46,10 +46,19 @@ final class Objetiva extends Questao{
         this.respostaCorreta = repostaCorreta;
     }
     
-    public void Imprimir_opcoes(){
+    /*public void Imprimir_opcoes(){
         //System.out.println("\nOpcao " + (opcao+1) + ": " + getOpcoes());
         for (int i=0;i<5;i++){
             System.out.println("\nOpcao " + (i+1) + ": " + this.opcoes[i]);
         }
+    }*/
+        @Override
+    public String imprimir_questao(){
+        String retorno = "";
+        for (int i=0;i<this.getOpcoes().length;i++){    //Tamanho real do Vetor
+            //System.out.println("\nOpcao " + (i+1) + ": " + this.opcoes[i]);
+            retorno += "\nOpcao " + (i+1) + ": " + this.opcoes[i];
+        }
+        return retorno;
     }
 }
