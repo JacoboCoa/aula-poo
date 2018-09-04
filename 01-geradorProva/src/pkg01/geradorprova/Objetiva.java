@@ -45,4 +45,11 @@ final class Objetiva extends Questao{
     public void setRespostaCorreta(int repostaCorreta) {
         this.respostaCorreta = repostaCorreta;
     }
+    
+    public void Imprimir_opcoes(){
+        //System.out.println("\nOpcao " + (opcao+1) + ": " + getOpcoes());
+        for (int i=0;i<5;i++){
+            System.out.println("\nOpcao " + (i+1) + ": " + this.opcoes[i]);
+        }
+    }
 }

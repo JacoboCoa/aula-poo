@@ -40,4 +40,7 @@ abstract class Questao{
     public void setPeso(double peso) {
         this.peso = peso;
     }
+    public void Imprimir_pergunta(){
+        System.out.println("(Peso " + this.getPeso() + ")\n" + this.getPergunta());
+    }
 }
