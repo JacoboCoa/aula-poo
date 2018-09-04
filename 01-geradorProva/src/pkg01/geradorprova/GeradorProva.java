@@ -5,6 +5,7 @@
  */
 package pkg01.geradorprova;
 
+import java.nio.file.StandardOpenOption;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -19,7 +20,7 @@ public class GeradorProva {
      */
     public static void main(String[] args) {
         //Leituda de Dados
-        String nome_da_disciplina = "";
+        /*String nome_da_disciplina = "";
         Scanner ler = new Scanner(System.in);
         System.out.println("Qual a Disciplina da Prova?");
         nome_da_disciplina = ler.nextLine();
@@ -118,5 +119,29 @@ public class GeradorProva {
             //JOptionPane.showInputDialog(questoes_objetivas[i].Imprimir_pergunta());
             //JOptionPane.showInputDialog(questoes_objetivas[i].imprimir_questao());
         }
+    }*/
+    //Escrever em Arquivo
+    try{
+        Path caminho = Paths.get("arquivo.txt");
+        String conteudo = "Bolinha\nQuadradinho";
+        byte[] stringEmBytes 
+        
+        
+        
+        byte[] stringEmBytes = conteudo.getBytes();
+        Files.write(caminho, stringEmBytes, StandardOpenOption.APPEND,
+                StandardOpenOption.CREATE);
+        JOptionPane.showMessageDialog(null, "Deu Certo");
+    }catch (Exception e){
+        JOptionPane.showMessageDialog(null, "Deu Errado");
     }
+    //Ler Arquivo
+    try{
+        Path caminho = Paths.get("arquivo.txt");
+        byte[] bytesDoConteudoDoArquivo = Files.readAllBytes(caminho);
+    }
+}
+        
+    
+    Files.write(path, stringEmBytes);
 }

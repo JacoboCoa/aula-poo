@@ -1,0 +1,27 @@
+
+//Na classe Prova
+public string obtemProvaImpressao(){
+	String retorno = this.obtemDetalhes();
+	for (int i=0;i<this.questoesDiscursivas.lenght;i++){	//Retorna o tamanho do vetor, de acordo com o tamanho que ele foi criado, ñ retorna a qtd de elementos nele
+		retorno += "====================\n";
+		retorno += "(peso: " + this.questoesDiscursivas[i].getPeso() + ") ";
+		retorno += this.questoesDiscursivas[i].getPergunta() + "\n";
+		retorno += "-----------------------------\n";
+		retorno += "-----------------------------\n";
+		retorno += "-----------------------------\n";
+		retorno += "Criterios Correcao: " + this.questoesDiscursivas[i].getCriteriosCorrecao() + "\n";		
+	}
+	for (int i=0;i<this.questoesObjetivas.length;i++){
+		retorno += "====================\n";
+		retorno += "(peso: " + this.questoesObjetivas[i].getPeso() + ") ";
+		retorno += this.questoesObjetivas[i].getPergunta()+"\n";
+		retorno += "-----------------------------\n";
+		retorno += "-----------------------------\n";
+		retorno += "-----------------------------\n";
+		retorno += "Criterios Correcao: " + this.questoesObjetivas
+}
+
+
+
+// JOptionPane.showMessage
+
