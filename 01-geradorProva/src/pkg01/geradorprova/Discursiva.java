@@ -28,11 +28,11 @@ final class Discursiva extends Questao {
     /*public void Imprimir_resposta(){
         System.out.println("\nResposta: \n\n\n");
     }*/
-        @Override
+    /*    @Override
     public String imprimir_questao(){
         //System.out.println("\nResposta: \n\n\n");
         String retorno = "";
         retorno += "\nResposta: \n\n\n";
         return retorno;
-    }
+    }*/
 }

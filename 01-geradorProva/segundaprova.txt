@@ -1,0 +1,23 @@
+Nome: POO
+Peso: 8
+Local: Lab 3 - Sala 108
+Data: 20/10/2018
+=================== 
+(Peso 4.0) Qual a Diferenca entre Agregacao e Composicao?
+____________________________________________________
+____________________________________________________
+____________________________________________________
+Critérios de Avaliação: Saber a Diferença
+=================== 
+(Peso 3.0) Qual a capital da Ucrania?
+1) Oslo
+2) Sidney
+3) New York
+4) Kiev
+5) Oakland
+=================== 
+(Peso 2.0) Qual a diferena entre Sobrecarga e Sobreescrita?
+____________________________________________________
+____________________________________________________
+____________________________________________________
+Critérios de Avaliação: Saber a resposta certa.

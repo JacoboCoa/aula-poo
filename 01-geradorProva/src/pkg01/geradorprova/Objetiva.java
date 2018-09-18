@@ -52,7 +52,7 @@ final class Objetiva extends Questao{
             System.out.println("\nOpcao " + (i+1) + ": " + this.opcoes[i]);
         }
     }*/
-        @Override
+    /*    @Override
     public String imprimir_questao(){
         String retorno = "";
         for (int i=0;i<this.getOpcoes().length;i++){    //Tamanho real do Vetor
@@ -60,5 +60,5 @@ final class Objetiva extends Questao{
             retorno += "\nOpcao " + (i+1) + ": " + this.opcoes[i];
         }
         return retorno;
-    }
+    }*/
 }

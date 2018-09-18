@@ -1,0 +1,30 @@
+Nome: POO
+Peso: 6
+Local: Lab 2 - Sala 107 - Bloco B6
+Data: 22/10/2018
+=================== 
+1) (Peso 2.0) Descreva a diferenca entre Sobrecarga e Sobreescrita.
+____________________________________________________
+____________________________________________________
+____________________________________________________
+Critérios de Avaliação: Saber a diferenca.
+=================== 
+2) (Peso 3.0) Qual a capital do Marrocos?
+1) Kiev
+2) Oakland
+3) Rabat
+4) Oslo
+5) Shangai
+=================== 
+3) (Peso 4.0) Qual a Diferenca entre Agregacao e Composicao?
+____________________________________________________
+____________________________________________________
+____________________________________________________
+Critérios de Avaliação: Saber a resposta.
+=================== 
+4) (Peso 1.0) Qual a capital dos EUA?
+1) New York
+2) Washington
+3) Oakland
+4) Orlando
+5) Miami

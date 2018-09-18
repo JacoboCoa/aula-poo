@@ -46,11 +46,23 @@ public class Prova {
     public String obtemProvaImpressao() {
         String retorno = this.obtemDetalhes();
         for (int i=0;i<questoes.size();i++){
-            
+            if (questoes.get(i) instanceof Discursiva){
+                retorno += "=================== \n";
+                retorno += (i+1) + ") (Peso " + questoes.get(i).getPeso() + ") ";
+                retorno += questoes.get(i).getPergunta() + "\n";
+                retorno += "____________________________________________________\n";
+                retorno += "____________________________________________________\n";
+                retorno += "____________________________________________________\n";
+                retorno += "Critérios de Avaliação: " + ((Discursiva)questoes.get(i)).getCriteriosCorrecao() + "\n";
+            } else if (questoes.get(i) instanceof Objetiva){
+                retorno += "=================== \n";
+                retorno += (i+1) + ") (Peso " + questoes.get(i).getPeso() + ") ";
+                retorno += questoes.get(i).getPergunta() + "\n";
+                for (int j=0;j<((Objetiva)questoes.get(i)).getOpcoes().length;j++){
+                    retorno += (j+1)+ ") "+((Objetiva)questoes.get(i)).getOpcoes()[j]+"\n";
+                }
+            }
         }
-        
-        
-        
         /*for(int i = 0; i < this.questoesDiscursivas.length; i++){
             retorno += "=================== \n";
             retorno += "(peso: "+this.questoesDiscursivas[i].getPeso()+") ";

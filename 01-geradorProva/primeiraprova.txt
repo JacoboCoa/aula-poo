@@ -1,0 +1,17 @@
+Nome: POO
+Peso: 7
+Local: Sala 108 - Lab 8
+Data: 15/10/2018
+=================== 
+(Peso 7.0) Qual a diferença entre sobrecarga e sobreescrita?
+____________________________________________________
+____________________________________________________
+____________________________________________________
+Critérios de Avaliação: Saber a Diferenca.
+=================== 
+(Peso 4.0) Qual a Capital da Noruega?
+1) Moscou
+2) London
+3) Kiev
+4) Oslo
+5) Sydnei
