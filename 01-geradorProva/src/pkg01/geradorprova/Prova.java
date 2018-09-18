@@ -43,6 +43,35 @@ public class Prova {
         return retorno;
     }
     
+    public String obtemProvaImpressao() {
+        String retorno = this.obtemDetalhes();
+        for (int i=0;i<questoes.size();i++){
+            
+        }
+        
+        
+        
+        /*for(int i = 0; i < this.questoesDiscursivas.length; i++){
+            retorno += "=================== \n";
+            retorno += "(peso: "+this.questoesDiscursivas[i].getPeso()+") ";
+            retorno += this.questoesDiscursivas[i].getPergunta()+"\n";
+            retorno += "____________________________________________________\n";
+            retorno += "____________________________________________________\n";
+            retorno += "____________________________________________________\n";
+            retorno += "Critérios correção: "+this.questoesDiscursivas[i].getCriteriosCorrecao()+"\n";
+        }
+        
+        for(int i = 0; i < this.questoesObjetivas.length; i++){
+            retorno += "=================== \n";
+            retorno += "(peso: "+this.questoesObjetivas[i].getPeso()+") ";
+            retorno += this.questoesObjetivas[i].getPergunta()+"\n";
+            for(int j = 0; j < this.questoesObjetivas[i].getOpcoes().length; j++){
+                retorno += (j+1)+") "+this.questoesObjetivas[i].getOpcoes()[j]+"\n";
+            }
+        }*/
+        return retorno;
+    }
+    
     /**
      * @return the nome
      */
@@ -100,31 +129,43 @@ public class Prova {
     }
 
     /**
+     * @return the questoes
+     */
+    public ArrayList<Questao> getQuestoes() {
+        return questoes;
+    }
+
+    /**
+     * @param questoes the questoes to set
+     */
+    public void setQuestoes(ArrayList<Questao> questoes) {
+        this.questoes = questoes;
+    }
+}
+    /**
      * @return the questoesDiscursivas
      */
-    public Discursiva[] getQuestoesDiscursivas() {
-        return questoesDiscursivas;
-    }
+//    public Discursiva[] getQuestoesDiscursivas() {
+//        return questoesDiscursivas;
+//    }
 
     /**
      * @param questoesDiscursivas the questoesDiscursivas to set
      */
-    public void setQuestoesDiscursivas(Discursiva[] questoesDiscursivas) {
-        this.questoesDiscursivas = questoesDiscursivas;
-    }
+//    public void setQuestoesDiscursivas(Discursiva[] questoesDiscursivas) {
+//        this.questoesDiscursivas = questoesDiscursivas;
+//    }
 
     /**
      * @return the questoesObjetivas
      */
-    public Objetiva[] getQuestoesObjetivas() {
-        return questoesObjetivas;
-    }
+//    public Objetiva[] getQuestoesObjetivas() {
+//        return questoesObjetivas;
+//    }
 
     /**
      * @param questoesObjetivas the questoesObjetivas to set
      */
-    public void setQuestoesObjetivas(Objetiva[] questoesObjetivas) {
-        this.questoesObjetivas = questoesObjetivas;
-    }
-
-}
+//    public void setQuestoesObjetivas(Objetiva[] questoesObjetivas) {
+//        this.questoesObjetivas = questoesObjetivas;
+//    }
