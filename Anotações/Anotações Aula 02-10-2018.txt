@@ -1,0 +1,63 @@
+Anotações Aula 02-10-2018
+Tipo de Layout
+-> Constrange Layout
+--> Gradle Scripts
+---> build.gradle (Module.app)
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jat'])
+	implementation 'com.android.support:appcompat-v7:27.1.1'
+	implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+	testImplementation 'junit:junit:4.12'
+	androidTestImplemantation 'com.android.support.test:runner:1.1.3'
+	
+}
+
+--> res
+---> drawable
+	ctrl + v dos icones PNG, 5 pastas
+
+-> Activity
+Area da programação das activitys, é o momento onde é preciso
+saber oq o app faz, ligar gps, ligar camera, quando no background,
+desligar gps, desligar camera...
+--> Activity's lifecicle callback methods
+
+---> Main Activity
+----> activity_main.xml
+	EditText meuElementoEntradaDeValores = findViewById(R.id.editText);
+	meuElementoEntradaDeValores.setText("Bolinha);
+
+----> MainActivity.java
+-----> public void fazerAParadaAcontecer(View elementoClicado){		//ctrl + espaço e enter -> no VIEW
+	EditText altura = findViewById(R.id.etAltura);
+	EditText peso = findViewById(R.id(etPeso);
+	TextView imc = findViewById(R.id.tvImc);
+
+	String alturaDigitada = altura.getText().toString();
+	String pesoDigitado = peso.getText().toString();
+
+	if (alturaDigitada
+	try{
+		double alturaEmDouble = Double.parseDouble(alturaDigitada);
+		double pesoDigitado = Double.parseDouble(pesoDigitado);
+
+		double resultadoImc = pesoEmDouble/(alturaEmDouble*alturaEmdouble);
+
+		imc.setText( "IMC: "+resultadoIMC );
+
+		imc.setVisibility(View.VISIBLE);
+	}catch (Exception e){
+		Toast mensagemErro = Toast.makeText (context: this, text: "Algo errado aconteceu", Toast.LENGHTH_LONG);
+		mensagemErro.show();
+		//Toast.makeText (context: this, text: "Algo errado aconteceu", Toast.LENGHTH_LONG) .show();
+	}
+
+	//altura.setText("Clicou no botão);
+}
+----> ActivityMain.xml
+------> android:onClick= "CalculoIMC"					//clicka no botao da inteface com o botao direito e vai ...
+-----> Textview
+------> inputType Number
+
+*Material Desgin Icon
