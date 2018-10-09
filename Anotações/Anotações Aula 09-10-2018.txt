@@ -18,3 +18,5 @@ Log.e -> error
 * null é diferente de zero
 
 *tvResultado.setText("" + DecimalFormat.getInstance().format(imc));
+
+*Classe Vector -> É possível desenhar 
