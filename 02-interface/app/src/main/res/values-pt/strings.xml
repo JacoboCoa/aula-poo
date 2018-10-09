@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Interface1st</string>
+    <string name="salvar_em">Sallvar em</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="telefone">Telefone</string>
+    <string name="celular">Celular</string>
+    <string name="email">E-mail</string>
+    <string name="residencial">Residencial</string>
+    <string name="fonetico">Nome fonético</string>
+</resources>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Interface1st</string>
+    <string name="salvar_em">Save in</string>
+    <string name="nome">First Name</string>
+    <string name="sobrenome">Last Name</string>
+    <string name="telefone">Fone Number</string>
+    <string name="celular">Cell Phone</string>
+    <string name="email">E-mail</string>
+    <string name="residencial">Residence</string>
+    <string name="fonetico">Phonetic Name</string>
 </resources>
