@@ -1,0 +1,20 @@
+Anotações Aula 09-10-2018
+
+Troca de Atividades
+Troca de Atividades com Dados
+Troca de Atividades com Objetos (facil)		-> Serializable
+Troca de Atividades com Objetos (Performance)	-> Parcelable
+
+*
+-> strings 
+	"alt+enter" ao lado do texto
+* É possível travar o layout para ñ usar como landcape
+-> manifest
+*
+Log.d -> debug		//Comentar ou remover quando publicar, pq senão o app fica mais lento
+Log.w -> warn
+Log.e -> error
+
+* null é diferente de zero
+
+*tvResultado.setText("" + DecimalFormat.getInstance().format(imc));
