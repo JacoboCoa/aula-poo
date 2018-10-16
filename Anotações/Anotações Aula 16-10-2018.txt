@@ -1,0 +1,58 @@
+Anotações Aula 16-10-2018
+
+-> Criar Item Lista
+-> Criar Classe de Objetos
+-> RV como Nova Dependência
+-> View Folder
+-> Adapter
+
+----------------------------------
+-> Criar Item Lista
+*avaliacao_item_lista.xml
+
+-> Criar Classe de Objetos
+--> new java class Avaliacao.java
+---> refactor Avaliacao.java
+
+--> MainActivity.java
+---> ArrayList<Avaliacao> listaAvaliacao = new ArrayList<>();
+*ReciclerView  //ñ faz parte do SDK basico, assim como o ConstrantLayout
+--> build.gradle (Mudule: app)
+---> implementation 'com.android.support:recyclerview-v7:27.1.1'	//Sync em seguida
+--> activity_main.xml
+---> <android.support:recyclerview-v7:27.1.1
+*Adapter	//faz o intermédio entre "ListadeAlgo" e "ElementoInterface"
+*AvaliacaoAdapter
+**superclass:android.support:recyclerview-v7:27.1.1
+***extender RecyclerView
+
+-->AvaliacaoAdapter.java
+---> 3 métodos
+----> Criar Gavetas
+----> Vestir Gavetas
+----> Retornar o total de itens da lista
+
+--> AvaliacaoViewHolder.java	//novaclasse
+-->*superclass: recyclerview
+*Inflar xml
+
+--> MainActivity.java
+---> AvaliacaoAdapter adaptador = new AvaliacaoAdapter();
+---> rvListaAvaliacoes.setAdapter()listaAvaliacao;
+
+--> AvaliacaoAdapter.java
+---> public int getItemCount(){
+----> return listaAvaliacoes.size();
+
+--> AvaliacaoAdapter.java
+---> public void onBindViewHolder(){
+
+--> AvaliacaoViewHolder.java
+---> atualizaGaveta
+
+*OnClick serve somente apartir de: um click para: uma Activity
+
+#MainActivity.java
+##rvListaAvaliacoes.setLayoutManager( new LinearLayoutManager(this.getApplicationContext()));
+
+#floatactionbutton
