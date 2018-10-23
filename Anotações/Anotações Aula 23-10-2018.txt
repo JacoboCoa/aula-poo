@@ -1,0 +1,45 @@
+Anotações Aula 23-10-2018
+*Usar para melhorar trabalho anterior Calculadora Área -> Flag, Manifest
+
+-------------------------
+-> DAO -> Data Acess Object
+-> Navegar Volta/BackButton c/ Resultados
+-> Leitura/Escrita Arquivos (Memória Interna)
+
+* Prósima Aula
+*-> FireBase
+*-> FireStore
+*-> GCM
+
+-> DAO
+--> AvaliacaoDao
+
+*finish -> Mata a Activity atual
+*startActivityForResult();
+*RequestCode -> int, utiliza-se variável int
+*ResultCode -> fica na activity a ser destruída
+*Intent data -> é o testamento da activity
+*this.adaptador.notifyDataSetChanged(); -> atualiza o main activity
+*private static final -> declara uma constante
+*FileWriter escritor = new FileWriter(refArquivo, true); ->adicionar try & catch	//pode dar erro
+* \n -> no AndroidStudio
+*getApplicationContext
+*Split -> tesoura de string
+
+----------------------------------------------
+Exemplo do APP:
+------------
+km: 5000
+L: 20
+------------
+km: 5500
+L: 35
+------------
+km: 6300
+L: 1
+
+-----------------
+(5500-5000)/20 = autonomia
+-----------------
+(6300-5500 + 5500-5000)/20+35 = autonimia atualizada
+-----------------
