@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">04-calculadora-area</string>
+    <string name="selecione_a_forma">Selecione a forma:</string>
+    <string name="avancar">Avançar</string>
+    <string name="circulo">Círculo</string>
+    <string name="triangulo">Triângulo</string>
+    <string name="quadrado">Quadrado</string>
+</resources>
