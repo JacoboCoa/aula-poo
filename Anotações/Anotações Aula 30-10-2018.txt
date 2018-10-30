@@ -1,0 +1,15 @@
+Anotações Aula 30-10-2018
+
+-> Edição/Exclusão (Files)
+-> LongCLickListener
+
+----------------------------------------
+
+FileWriter (refArquivo, false) -> Apaga e escreve novamente
+FileWriter (refArquivo, true) -> Escreve no final
+
+onLongClick
+itemView.setOnLongClickListener(new View.OnLongClickListener(){
+@Override
+
+}
