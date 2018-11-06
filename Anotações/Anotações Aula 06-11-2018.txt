@@ -1,0 +1,85 @@
+Anotações Aula 06-11-2018
+
+-> Banco de Dados
+-> Menu
+-> Shared Preferences
+
+CRUD
+
+SGBD
+SQLITE
+
+<-> DbHelper.java
+|-> DbHelper - Nova Classe
+______________________________________________________________________________
+<-> DbHelper.java
+______________________________________________________________________________
+
+|-> extends SQLiteOpenHelper
+|--> public void onCreate()
+|--> public void onUpgrade()
+|-> Create Constructor
+|--> public DbHelper(Context context){
+	super(context, name, factory, version);
+     }
+
+|-> SGBD e SQLITE são como tabelas, sendo as colunas os atributos /Nome /Data /Peso /Conteúdo/
+								  /     /     /     /        /
+---------------------------------------------------------------------
+* Método onCreate
+|-> public void onCreate(SQLiteDatabase sqLiteDatabase){
+	String SQLCriacaoTabelas = "CREATE TABLE avaliacao (" +
+		"ID INTEGER PRIMARY KEY AUTOINCREMENT, " +	//nome do atributo, e seu tipo, chave primaria, incrementa sozinho
+		"MEDIA TEXT, " +
+		"CONTEUDO TEXT, " +
+		"DISCIPLINA TEXT, " +
+		"DATA TEXT" + 
+		");";
+	sqLiteDatabase.execSQL(SQLCriacaoTabelas);
+    }
+----------------------------------------------------------------------
+* Método onUpgrade
+	String SQLCriacaoTabelas = "CREATE TABLE avaliacao (" +
+		"DATA TEXT" + 
+		"FOTO TEXT" +
+		");";
+|--> public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1){
+	String SQLAlteracaoTabelas = "ALTER TABLE avaliacao " +
+		"ADD COLUMN FOTO TEXT; ";
+	sqLiteDatabase.execSQL(SQLAlteracaoTabelas);
+     }
+----------------------------------------------------------------------
+* Método onUpgrade no controle de Versao
+|-> private static final int VERSAO_DB = 1;			//Controle de Versao do Software no onUpgrade tbm
+    public DbHelper(Context context){
+	super(context, name, null, VERSAO_DB);
+    }
+
+----------------------------------------------------------------------
+|--> public DbHelper(Context context){
+	super(context, name, null, VERSAO_DB);		// name-> nome do banco(é possível ter mais de um banco
+     }							// tbm é possível ter mais de uma tabela), é mais eficiente ter 20 tabelas, do que 20 bancos
+
+----------------------------------------------------------------------
+*Programar
+
+______________________________________________________________________
+AvaliacaoDao.java
+______________________________________________________________________
+
+SQLiteDatabase db = new meuDB.getWritableDatabase();
+SQLiteDatabase db = new meuDB.getReadableDatabase();		//é possível ler duas vezes, em vez de escrever e ler ao mesmo tempo
+
+SQLiteDatabase sb = new meuDB.getReadableDatabase();
+Cursor ponteiro = db.rawQuery(SQLBuscarAvaliacoes, null);
+while()
+
+----------------------------------------------------------------------
+
+//forma 1 (sql hard coded)		//sujeito a erro atraves da aspas simples
+//forma 2 (sql quase hard coded)	//escape da aspas simples que pode fazer parte do conteudo
+______________________________________________________________________
+***SQL Injection
+***UAUUU';DROP TABLE avaliacao; -- 	//retorna erro no primeiro, seguinte deleta tudo que vem em seguida
+______________________________________________________________________
+
