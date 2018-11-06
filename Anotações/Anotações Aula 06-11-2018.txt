@@ -2,7 +2,7 @@ Anotações Aula 06-11-2018
 
 -> Banco de Dados
 -> Menu
--> Shared Preferences
+-> Shared Preferences 		//é um pequeno banco de dados
 
 CRUD
 
@@ -82,4 +82,37 @@ ______________________________________________________________________
 ***SQL Injection
 ***UAUUU';DROP TABLE avaliacao; -- 	//retorna erro no primeiro, seguinte deleta tudo que vem em seguida
 ______________________________________________________________________
+
+****AtualizaDatasetLista	//no main Activity
+______________________________________________________________________
+*****MENU*****
+->Sliding Menu Android		//Para fazer o menu lateral de uma aplicação, procurar no google.
+
+->Menu Convencional
+
+-> no "res" criar menu
+--> dentro do menu, criar menu principal, resultante então -> "menuprincipal.xml"
+
+@Override
+public boolean onCreateOptionsMenu(Menu menu){
+	MenuInflater inflador = new MenuInflater(this.getApplicationContext());
+	inflador.inflate(R.menu.menu_principal,menu);
+	return true;
+}	
+
+@Override
+public boolean onOptionsItemSelected(MenuItem item){
+}
+
+_____________________________________________________________________
+*Shared Preferences
+
+-> criar nova activity -> PreferenciasActivity.java
+SharedPreferences preferencias = getSharedPrefences("tela", MODE_PRIVATE);	//é possível ter mais de um assunto, neste caso tela
+SharedPreferences.Editor editor = preferencias.edit();		//é necessario para editar, ou alterar, senão só leitura
+editor.apply	//atualiza os valores na ram, escreve em disco em background
+editor.commit	//escreve em disco em background e aguarda fechar e abrir a aplicação
+
+private void aplicarCorDeFundo(){
+
 
