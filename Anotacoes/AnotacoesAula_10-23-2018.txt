@@ -6,7 +6,7 @@ Anotações Aula 23-10-2018
 -> Navegar Volta/BackButton c/ Resultados
 -> Leitura/Escrita Arquivos (Memória Interna)
 
-* Prósima Aula
+* Próxima Aula
 *-> FireBase
 *-> FireStore
 *-> GCM
