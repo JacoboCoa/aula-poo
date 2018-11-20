@@ -1,0 +1,13 @@
+Anotações Aula 13/11/2018
+
+Linguagem JSon é muito utilizado com as API da internet, é uma linguagem assim como o xml
+
+Volley -> Biblioteca que o Android fornece que possibilita 4 formas de retorno
+String, JSonObject, JSonArray, Imagem, se for necessário outro tipo, é preciso criá-lo
+É preciso incluir a biblioteca igual o recicler view
+
+Servidor Python criado pelo Professor
+-> $ python server.py
+
+No Manifest -> uses-permission android:name "android..."  		//permissão para intenert
+
