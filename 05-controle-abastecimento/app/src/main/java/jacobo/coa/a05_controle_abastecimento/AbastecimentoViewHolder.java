@@ -44,6 +44,8 @@ public class AbastecimentoViewHolder extends RecyclerView.ViewHolder {
         } else if (objetoAbastecimento.getPosto().equals("Texaco")) {
             this.ivposto.setImageResource(R.drawable.texaco_logo);
         }
+
+        //Aqui?
 //        } else {
 //            this.ivposto.setImageResource(R.drawable.ic_gas_station);
 //        }

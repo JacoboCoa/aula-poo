@@ -11,10 +11,9 @@ import android.widget.Toast;
 public class ListaPostosActivity extends AppCompatActivity {
 
     private final int RC_ADICIONAR_ABASTECIMENTO = 2018;
-
     private AbastecimentoAdapter adaptador;
-
-    public int cont;
+    double contKm;
+    double contLitros;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +29,37 @@ public class ListaPostosActivity extends AppCompatActivity {
         rvListadeAbastecimentos.setAdapter(this.adaptador);
 
         rvListadeAbastecimentos.setLayoutManager(new LinearLayoutManager(this.getApplicationContext()));
-
     }
     public void onClickFABAdicionar(View v){
         Intent intencaoAdicionarAbastecimento = new Intent(this.getApplicationContext(),AdicionarAbastecimentoActivity.class);
-        //intencaoAdicionarAbastecimento.putExtra();
         startActivityForResult(intencaoAdicionarAbastecimento,RC_ADICIONAR_ABASTECIMENTO);
     }
+
+    public double calcAutonomia (){
+        double autonomia=0;
+        double kmAtual;
+        double kmAnt;
+        for (int i=0; i< this.adaptador.getItemCount();i++){
+            if (i == 0){
+                contLitros = Double.parseDouble(this.adaptador.listaAbastecimentos.get(i).getLitrosAbastecidos());
+            }else {
+                kmAnt = Double.parseDouble(this.adaptador.listaAbastecimentos.get(i - 1).getKmAtual());
+                kmAtual = Double.parseDouble(this.adaptador.listaAbastecimentos.get(i).getKmAtual());
+                contKm += kmAtual - kmAnt;
+                contLitros += Double.parseDouble(this.adaptador.listaAbastecimentos.get(i).getLitrosAbastecidos());
+                autonomia = contKm / (contLitros - Double.parseDouble(this.adaptador.listaAbastecimentos.get(i).getLitrosAbastecidos()));
+            }
+        }
+        return autonomia;
+    }
+
+    public void onClickFABConsumo (View v){
+        Intent i = new Intent();
+        i.putExtra("Consumo",Double.toString(calcAutonomia()));
+        setResult(RESULT_OK,i);
+        finish();
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode,resultCode,data);

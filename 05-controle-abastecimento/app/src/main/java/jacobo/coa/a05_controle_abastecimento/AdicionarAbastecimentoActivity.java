@@ -12,6 +12,11 @@ import android.widget.Toast;
 
 public class AdicionarAbastecimentoActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+//    double contKm = this.getIntent().getDoubleExtra("contKm",-1);
+//    double contLitros = this.getIntent().getDoubleExtra("contLitros",-1);
+//    double contQtd = this.getIntent().getDoubleExtra("contQtd", -1);
+
+
     public void onClickSalvar(View v){
         EditText etKmAtual = findViewById(R.id.etKmAtual);
         EditText etLitrosAbastecidos = findViewById(R.id.etLitrosAbastecidos);
@@ -27,6 +32,10 @@ public class AdicionarAbastecimentoActivity extends AppCompatActivity implements
         abastecimento.setLitrosAbastecidos(etLitrosAbastecidos.getText().toString());
         abastecimento.setDataAbastecimento(etDataAbastecimento.getText().toString());
         abastecimento.setPosto(spinnerPosto.getSelectedItem().toString());            //is it work?
+
+//        contKm = Double.parseDouble(abastecimento.getLitrosAbastecidos());
+//        contLitros = Double.parseDouble(abastecimento.getLitrosAbastecidos());
+//        contQtd++;
 
         //Salvar através do DAO...
         boolean sucessoAoSalvar = AbastecimentoDAO.salvar(this.getApplicationContext(),abastecimento);
