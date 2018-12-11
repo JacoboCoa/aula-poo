@@ -1,0 +1,15 @@
+Anotações Aula 20-11-2018
+
+***MainActivity.this.getApplicationContext().
+
+FireBase
+FireStore
+
+.getIntance() -> singleton pattern -> apenas um objeto na classe da aplicação
+
+*POJO -> tem get e set
+
+.collection -> ou tem POJO ou uma estrutura de chave/valor
+
+baldeVeiculos.get().addOnCompleteListener() -> obtem todos
+
