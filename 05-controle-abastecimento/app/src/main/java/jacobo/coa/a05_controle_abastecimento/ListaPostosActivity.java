@@ -60,6 +60,11 @@ public class ListaPostosActivity extends AppCompatActivity {
         finish();
     }
 
+    public void onClickFABLocalization (View v){
+        Intent intencaoAbrirLocalization = new Intent(this.getApplicationContext(),MapsActivity.class);
+        startActivity(intencaoAbrirLocalization);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode,resultCode,data);
