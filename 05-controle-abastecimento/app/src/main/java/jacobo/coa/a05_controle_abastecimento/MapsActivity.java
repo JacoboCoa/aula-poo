@@ -43,7 +43,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             @Override
             public void onStatusChanged(String provider, int status, Bundle extras) {
-
+                //CONTINUAR   AQUI - 10:22 - 13/12/2018
             }
 
             @Override

@@ -61,7 +61,7 @@ public class ListaPostosActivity extends AppCompatActivity {
     }
 
     public void onClickFABLocalization (View v){
-        Intent intencaoAbrirLocalization = new Intent(this.getApplicationContext(),MapsActivity.class);
+        Intent intencaoAbrirLocalization = new Intent(this.getApplicationContext(),Localization.class);
         startActivity(intencaoAbrirLocalization);
     }
 
